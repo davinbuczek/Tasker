@@ -15,6 +15,7 @@
 		839B3B991D5154A0002C387C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 839B3B971D5154A0002C387C /* LaunchScreen.storyboard */; };
 		839B3BA41D5154A0002C387C /* TaskerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B3BA31D5154A0002C387C /* TaskerTests.swift */; };
 		839B3BAF1D5154A0002C387C /* TaskerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B3BAE1D5154A0002C387C /* TaskerUITests.swift */; };
+		839B3BBF1D515C80002C387C /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839B3BBE1D515C80002C387C /* TaskManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		839B3BAA1D5154A0002C387C /* TaskerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		839B3BAE1D5154A0002C387C /* TaskerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskerUITests.swift; sourceTree = "<group>"; };
 		839B3BB01D5154A0002C387C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		839B3BBE1D515C80002C387C /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				839B3B951D5154A0002C387C /* Assets.xcassets */,
 				839B3B971D5154A0002C387C /* LaunchScreen.storyboard */,
 				839B3B9A1D5154A0002C387C /* Info.plist */,
+				839B3BBE1D515C80002C387C /* TaskManager.swift */,
 			);
 			path = Tasker;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				TargetAttributes = {
 					839B3B881D5154A0002C387C = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8MUK78Q358;
 					};
 					839B3B9E1D5154A0002C387C = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -261,6 +265,7 @@
 			files = (
 				839B3B911D5154A0002C387C /* SecondViewController.swift in Sources */,
 				839B3B8D1D5154A0002C387C /* AppDelegate.swift in Sources */,
+				839B3BBF1D515C80002C387C /* TaskManager.swift in Sources */,
 				839B3B8F1D5154A0002C387C /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,10 +408,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tasker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.Tasker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -414,10 +422,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tasker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.Tasker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
